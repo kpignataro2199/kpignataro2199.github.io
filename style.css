@@ -1,36 +1,57 @@
-/* 1. Global Page Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    /* Use a sharper font stack for a less 'bubbly' look */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    background-color: #f0f2f0; /* Light gray-green "outside" background */
+    line-height: 1.6;
+    background-color: #f0f2f0;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* 2. The Main Container (The "Paper" look) */
+/* Container styling for the 'card' look */
 main, header, footer {
-    max-width: 750px;
+    max-width: 800px;
     margin: 20px auto;
-    background: #ffffff; /* White "inside" background */
+    background: #ffffff;
     padding: 40px;
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow for depth */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* 3. Header Accent */
 header {
-    border-top: 8px solid #2e7d32; /* Thick forest green brand bar */
+    border-top: 8px solid #2e7d32;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     color: #1b5e20;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em; /* Makes the title look sharper */
 }
 
-/* 4. Interactive Post List */
+header .tagline {
+    color: #666;
+    font-style: italic;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Post list on homepage - Critical Scraper Format */
 .post-list {
     list-style: none;
     padding: 0;
@@ -38,31 +59,46 @@ header h1 {
 
 .post-list li {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #eee;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .post-list li:hover {
     border-color: #2e7d32;
     background-color: #f9fff9;
-    transform: scale(1.01); /* Subtle "pop" effect */
 }
 
 .post-list a {
-    text-decoration: none;
+    font-size: 1.4em;
     color: #2e7d32;
-    font-weight: bold;
-    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
 }
 
-/* 5. Styling your "My Take" sections */
+.post-list .date {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Styling for your 'takes' from the specs */
 blockquote {
-    background: #e8f5e9;
+    background: #f1f8e9;
     border-left: 5px solid #2e7d32;
-    margin: 30px 0;
+    margin: 25px 0;
     padding: 20px;
     border-radius: 0 8px 8px 0;
     font-style: italic;
+    color: #2e7d32;
+}
 
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+}
