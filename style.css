@@ -1,98 +1,68 @@
-* {
+/* 1. Global Page Style */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f0f2f0; /* Light gray-green "outside" background */
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    /* REVERTED FONT: Using clean, modern sans-serif fonts */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: #f4f7f4; /* Light sage green background */
-    color: #2c3e50;
+/* 2. The Main Container (The "Paper" look) */
+main, header, footer {
+    max-width: 750px;
+    margin: 20px auto;
+    background: #ffffff; /* White "inside" background */
+    padding: 40px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow for depth */
 }
 
+/* 3. Header Accent */
 header {
-    border-bottom: 3px solid #2e7d32; /* Forest green accent */
-    padding-bottom: 30px;
-    margin-bottom: 40px;
+    border-top: 8px solid #2e7d32; /* Thick forest green brand bar */
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #1b5e20;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-header .tagline {
-    color: #555;
-    font-style: italic;
-    font-size: 1.1em;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    color: #2e7d32;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: #1b5e20;
-}
-
-/* Post list on index page */
+/* 4. Interactive Post List */
 .post-list {
     list-style: none;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 0;
 }
 
 .post-list li {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.post-list li:last-child {
-    border-bottom: none;
+.post-list li:hover {
+    border-color: #2e7d32;
+    background-color: #f9fff9;
+    transform: scale(1.01); /* Subtle "pop" effect */
 }
 
 .post-list a {
-    font-size: 1.4em;
-    color: #2e7d32;
     text-decoration: none;
+    color: #2e7d32;
     font-weight: bold;
+    font-size: 1.3em;
 }
 
-.post-list .date {
-    display: block;
-    margin-top: 8px;
-    color: #888;
-    font-style: italic;
-    font-size: 0.9em;
-}
-
-/* Individual post styles */
+/* 5. Styling your "My Take" sections */
 blockquote {
-    border-left: 5px solid #a5d6a7;
-    margin: 2em 0;
-    padding: 1em 1.5em;
-    background-color: #f1f8e9;
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
     font-style: italic;
-    color: #33691e;
-}
 
-footer {
-    margin-top: 60px;
