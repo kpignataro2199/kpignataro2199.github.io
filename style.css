@@ -126,13 +126,17 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-/* Responsive Banner Styling */
+
+/* Responsive Banner Styling - Fixed version */
 .hero-banner {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover; /* Crops the image to fit the banner shape without stretching */
-    border-radius: 8px;
-    margin-bottom: 30px;
+    display: block;      /* Ensures it behaves like a box */
+    width: 100%;         /* Tries to fill the container */
+    max-width: 100%;     /* STRICTLY prevents it from going wider than the box */
+    height: auto;        /* Maintains the image's natural proportions */
+    max-height: 350px;   /* Prevents it from being too tall on desktops */
+    object-fit: cover;   /* Crops the image cleanly to fit the height */
+    border-radius: 8px;  /* Matches your professional sharp-but-soft corners */
+    margin: 0 auto 30px auto; /* Centers the image and adds bottom spacing */
     border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-sizing: border-box; /* Includes the border in the width calculation */
 }
