@@ -102,3 +102,23 @@ footer {
     color: #888;
     font-size: 0.9em;
 }
+/* --- My Custom Image Styles --- */
+
+/* This ensures images never overflow the page and stay centered */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px; /* Optional: gives the photos soft rounded corners */
+}
+
+/* This styles the text underneath your photos */
+.image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
