@@ -119,3 +119,10 @@ footer {
     font-style: italic;
     margin-top: 5px;
 }
+/* Limits the image height so the title is visible on page load */
+.post-image-container img {
+    max-height: 400px; 
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
