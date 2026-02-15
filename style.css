@@ -140,3 +140,21 @@ footer {
     border: 1px solid #e0e0e0;
     box-sizing: border-box; /* Includes the border in the width calculation */
 }
+/* Style for all unordered lists in your articles */
+article ul {
+    padding-left: 40px;      /* Increases the indent (default is usually 20-25px) */
+    margin-bottom: 20px;     /* Adds space below the list */
+}
+
+/* Style for the individual list items */
+article li {
+    margin-bottom: 10px;     /* Adds space between each bullet point */
+    line-height: 1.6;        /* Improves readability for longer bullets */
+}
+
+/* Make the bullet points (the markers) stand out */
+article li::marker {
+    color: #2e7d32;          /* A professional forest green to match your wildlife theme */
+    font-size: 1.2em;        /* Makes the bullet slightly larger */
+    content: "• ";           /* Optional: you can change "•" to "→" or "»" for a sharper look */
+}
