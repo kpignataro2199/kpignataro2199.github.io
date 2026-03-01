@@ -1,8 +1,7 @@
-/* --- 1. CORE BRANDING --- */
 :root {
     --primary-green: #2e7d32;
     --accent-green: #f1f8e9;
-    --page-bg: #f4f7f4; /* Soft Sage Background */
+    --page-bg: #f4f7f4; 
     --text-dark: #263238;
 }
 
@@ -13,7 +12,7 @@ body {
     color: var(--text-dark);
 }
 
-/* --- 2. THE GRADIENT NAV BAR (RESTORED) --- */
+/* GRADIENT NAV BAR & PILLS */
 header {
     background: linear-gradient(180deg, #ffffff 0%, var(--accent-green) 100%) !important;
     padding: 30px 20px;
@@ -21,15 +20,13 @@ header {
     border-bottom: 4px solid var(--primary-green);
 }
 
-header nav { margin-top: 15px; }
-
 header nav a {
     text-decoration: none;
     color: var(--text-dark);
     padding: 10px 25px;
     margin: 0 5px;
     font-weight: 600;
-    border-radius: 50px; /* Pill Shape */
+    border-radius: 50px;
     display: inline-block;
 }
 
@@ -38,26 +35,44 @@ header nav a.active {
     color: white !important;
 }
 
-/* --- 3. THE BUBBLES (NEWS POST CARDS) --- */
+/* MAIN CONTAINER */
 main {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
+/* BANNER IMAGE FIX */
+.hero-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* WELCOME BUBBLE */
+.welcome-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    border-left: 6px solid var(--primary-green);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* NEWS POST BUBBLES (CARDS) */
 .post-list {
     list-style: none;
     padding: 0;
 }
 
-/* This creates the white bubble around each news post */
 .post-list li {
     background: white !important;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .post-list a {
@@ -66,7 +81,6 @@ main {
     font-size: 1.3rem;
     font-weight: bold;
     display: block;
-    margin-bottom: 5px;
 }
 
 .category-badge {
@@ -82,6 +96,10 @@ main {
 }
 
 .date {
+    display: block;
+    margin-top: 8px;
     font-size: 0.85rem;
     color: #607d8b;
 }
+
+footer { text-align: center; padding: 40px; color: #777; }
