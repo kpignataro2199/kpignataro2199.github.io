@@ -1,53 +1,43 @@
-/* --- 1. CORE BRAND COLORS & FONTS --- */
+/* --- 1. THE FOUNDATION --- */
 :root {
     --primary-green: #2e7d32;
     --accent-green: #f1f8e9;
     --deep-charcoal: #263238;
-    --slate-grey: #546e7a;
     --page-bg: #f4f7f4; 
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.8;
     color: var(--deep-charcoal);
     background-color: var(--page-bg);
     margin: 0;
-    padding: 0;
 }
 
-/* --- 2. HEADER & STICKY NAV --- */
+/* --- 2. LAYOUT & CENTERING (FIXES STRETCHING) --- */
+main {
+    max-width: 800px; /* Limits width for readability */
+    margin: 40px auto; /* Centers the content */
+    padding: 20px;
+}
+
+/* --- 3. HEADER & PILL NAV --- */
 header {
     background: linear-gradient(135deg, #ffffff 0%, var(--accent-green) 100%);
-    padding: 40px 20px;
+    padding: 30px;
     text-align: center;
     border-bottom: 3px solid var(--primary-green);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-header h1 { margin: 0; font-size: 2.2rem; }
-
-header nav { margin-top: 20px; }
-
 header nav a {
     text-decoration: none;
     color: var(--deep-charcoal);
-    font-weight: 600;
-    padding: 8px 22px;
-    margin: 0 5px;
+    padding: 8px 20px;
     border-radius: 30px;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-header nav a:hover {
-    background-color: white;
-    color: var(--primary-green);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 header nav a.active {
@@ -55,74 +45,55 @@ header nav a.active {
     color: white;
 }
 
-/* --- 3. THE POST LIST (THIS FIXES THE BULLETS) --- */
-.post-list-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 20px;
+/* --- 4. THE "MY PERSPECTIVE" BOX (FIXES MISSING BOX) --- */
+blockquote {
+    border-left: 6px solid var(--primary-green);
+    background: white; /* Contrast against sage background */
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 0 15px 15px 0;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-ul.post-list {
-    list-style-type: none; /* This removes the bullet points */
+/* --- 5. RECOMMENDED READING BOXES (FIXES PURPLE LINKS) --- */
+.suggestion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.suggestion-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none; /* Removes the underline */
+    color: inherit;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--primary-green);
+}
+
+.suggestion-card h4 {
+    margin: 0 0 10px 0;
+    color: var(--primary-green);
+}
+
+/* --- 6. INDEX POST LIST --- */
+.post-list {
+    list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .post-list li {
-    background: #ffffff;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.05);
-}
-
-.post-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-}
-
-.post-list li a {
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--primary-green);
-    display: block;
-}
-
-/* --- 4. BADGES & DATES --- */
-.category-badge {
-    display: inline-block;
-    background-color: var(--accent-green);
-    color: var(--primary-green);
-    font-size: 0.7rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(46, 125, 50, 0.1);
-}
-
-.date {
-    font-size: 0.85rem;
-    color: var(--slate-grey);
-    margin-top: 8px;
-    display: block;
-}
-
-/* --- 5. IMAGES & FOOTER --- */
-.hero-banner {
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 60px;
-    color: var(--slate-grey);
+    background: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 12px;
 }
