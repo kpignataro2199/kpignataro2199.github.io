@@ -1,73 +1,86 @@
-/* --- 1. THE FOUNDATION --- */
+/* --- 1. THE BASICS --- */
 :root {
-    --primary-green: #2e7d32;
-    --accent-green: #f1f8e9;
-    --deep-charcoal: #263238;
-    --page-bg: #f4f7f4; 
+    --primary-green: #2e7d32; /* Forest Green */
+    --light-grey: #f8f9fa;
+    --text-dark: #333333;
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.8;
-    color: var(--deep-charcoal);
-    background-color: var(--page-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #ffffff; /* BACK TO WHITE */
     margin: 0;
+    padding: 0;
 }
 
-/* --- 2. HEADER IMAGE FIX (STOP ENLARGEMENT) --- */
-.hero-banner {
-    width: 100%;
-    max-width: 800px; /* Limits the image width */
-    height: auto;
-    display: block;
-    margin: 0 auto 30px auto; /* Centers the image */
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* --- 3. LAYOUT & CENTERING --- */
-main {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px;
-}
-
-/* --- 4. HEADER & NAV --- */
+/* --- 2. HEADER & STICKY NAV --- */
 header {
-    background: white;
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--primary-green);
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid var(--primary-green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav a {
     text-decoration: none;
-    color: var(--deep-charcoal);
-    padding: 8px 15px;
+    color: var(--text-dark);
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 header nav a.active {
-    background: var(--primary-green);
-    color: white;
-    border-radius: 20px;
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
 }
 
-/* --- 5. THE BOXES (FIXES PURPLE LINKS) --- */
+/* --- 3. THE CENTERED CONTAINER (FIXES STRETCHING) --- */
+main {
+    max-width: 800px; /* Limits the width for readability */
+    margin: 20px auto; /* Centers the whole page */
+    padding: 20px;
+}
+
+/* --- 4. IMAGE FIX (FIXES GIANT IMAGE) --- */
+.hero-banner {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- 5. THE BOXES (MY TAKE & RECOMMENDED) --- */
+blockquote {
+    border-left: 5px solid var(--primary-green);
+    background-color: var(--light-grey);
+    padding: 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
 .suggestion-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 30px;
 }
 
 .suggestion-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    text-decoration: none !important; /* Forces removal of purple underline */
-    color: var(--deep-charcoal) !important;
     border: 1px solid #ddd;
-    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+.suggestion-card:hover {
+    border-color: var(--primary-green);
+    background-color: var(--light-grey);
 }
 
 .suggestion-card h4 {
@@ -75,12 +88,20 @@ header nav a.active {
     color: var(--primary-green);
 }
 
-/* --- 6. MY TAKE BOX --- */
-blockquote {
-    border-left: 5px solid var(--primary-green);
-    background: #fff;
-    padding: 20px;
-    margin: 30px 0;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+/* --- 6. INDEX LISTS --- */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list a {
+    text-decoration: none;
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 1.2rem;
 }
