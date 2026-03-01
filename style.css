@@ -1,86 +1,94 @@
-    :root {
-    --primary-green: #2e7d32;
-    --accent-green: #f1f8e9;
-    --page-bg: #f4f7f4; 
-    --text-dark: #263238;
+/* --- 1. THE BASICS --- */
+:root {
+    --primary-green: #2e7d32; /* Forest Green */
+    --light-grey: #f8f9fa;
+    --text-dark: #333333;
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: var(--page-bg) !important;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     color: var(--text-dark);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #ffffff; /* CLEAN WHITE */
+    margin: 0;
+    padding: 0;
 }
 
-/* --- HEADER & NAV PILLS --- */
+/* --- 2. HEADER & NAVIGATION --- */
 header {
-    background: linear-gradient(180deg, #ffffff 0%, var(--accent-green) 100%);
-    padding: 30px 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--primary-green);
+    padding: 20px;
     text-align: center;
-    border-bottom: 4px solid var(--primary-green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
-header nav { margin-top: 15px; }
 
 header nav a {
     text-decoration: none;
     color: var(--text-dark);
-    padding: 10px 25px;
-    margin: 0 5px;
-    font-weight: 600;
-    border-radius: 50px;
-    display: inline-block;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
 header nav a.active {
-    background-color: var(--primary-green) !important;
-    color: white !important;
+    background-color: var(--primary-green);
+    color: #ffffff;
 }
 
-/* --- MAIN CONTENT & INTRO --- */
+/* --- 3. THE CENTERED CONTAINER --- */
 main {
     max-width: 800px;
-    margin: 0 auto; /* Centers the content */
-    padding: 40px 20px;
-    flex: 1; /* Pushes footer to bottom */
+    margin: 20px auto;
+    padding: 20px;
 }
 
-.welcome-section {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    border-left: 6px solid var(--primary-green);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+/* --- 4. IMAGE CONTROL --- */
+.hero-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* --- POST CARDS (REMOVES PURPLE LINKS) --- */
-.post-list { list-style: none; padding: 0; }
+/* --- 5. THE POST CARDS --- */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
 
 .post-list li {
-    background: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s;
+}
+
+.post-list li:hover {
+    background-color: var(--light-grey);
 }
 
 .post-list a {
-    text-decoration: none !important;
-    color: var(--primary-green) !important;
-    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--primary-green);
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* --- FOOTER ALIGNMENT --- */
+/* --- 6. BOXES (MY TAKE) --- */
+blockquote {
+    border-left: 5px solid var(--primary-green);
+    background-color: var(--light-grey);
+    padding: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+}
+
 footer {
     text-align: center;
-    padding: 30px;
-    background: white;
-    border-top: 1px solid #ddd;
-    margin-top: auto;
-    width: 100%;
+    padding: 20px;
+    color: #777;
 }
