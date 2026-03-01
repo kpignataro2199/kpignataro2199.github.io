@@ -1,27 +1,28 @@
-/* --- 1. THE MODERN PALETTE --- */
+/* --- 1. THE FOUNDATION --- */
 :root {
     --primary-green: #2e7d32;
     --accent-green: #e8f5e9;
     --deep-charcoal: #263238;
-    --page-bg: #f0f4f0; /* Soft Sage Background */
+    --page-bg: #f4f7f4; /* Restoration of Sage Background */
 }
 
 body {
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-    line-height: 1.7;
-    color: var(--deep-charcoal);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--page-bg) !important;
+    color: var(--deep-charcoal);
     margin: 0;
-    padding: 0;
+    line-height: 1.8;
 }
 
-/* --- 2. HEADER & NAV (STICKY) --- */
+/* --- 2. PILL NAVIGATION --- */
 header {
     background: #ffffff;
     padding: 30px 20px;
     text-align: center;
     border-bottom: 3px solid var(--primary-green);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav { margin-top: 15px; }
@@ -30,62 +31,81 @@ header nav a {
     text-decoration: none;
     color: var(--deep-charcoal);
     font-weight: 600;
-    padding: 8px 18px;
+    padding: 8px 22px;
     margin: 0 5px;
-    border-radius: 20px;
-    transition: 0.3s;
+    border-radius: 30px; /* Modern Pill Shape */
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
+/* The Green Pill for the current page */
 header nav a.active {
-    background: var(--primary-green);
-    color: #ffffff;
+    background-color: var(--primary-green) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
 }
 
-/* --- 3. THE CENTERED CONTAINER (MAX WIDTH FIX) --- */
+/* --- 3. LAYOUT & IMAGE CONTROL --- */
 main {
-    max-width: 800px !important; /* Forces the column to stay narrow */
-    margin: 40px auto !important; /* Forces centering */
+    max-width: 800px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
-/* --- 4. HERO IMAGE (RESIZE FIX) --- */
 .hero-banner {
-    width: 100% !important;
-    max-width: 800px !important;
-    height: auto !important;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* --- 5. MODERN POST CARDS --- */
+/* --- 4. SEPARATE POST BOXES (CARDS) --- */
 .post-list {
     list-style: none;
     padding: 0;
 }
 
 .post-list li {
-    background: #ffffff; /* White cards pop against Sage bg */
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+    background: #ffffff; /* Floating white cards */
+    margin-bottom: 25px; /* Gap between separate boxes */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft shadow for depth */
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.02);
 }
 
 .post-list li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 .post-list a {
     text-decoration: none;
     color: var(--primary-green);
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: bold;
     display: block;
-    margin-bottom: 5px;
+    line-height: 1.4;
 }
 
-/* --- 6. CATEGORY BADGES --- */
+/* --- 5. CATEGORY BADGES --- */
 .category-badge {
+    display: inline-block;
+    background: var(--accent-green);
+    color: var(--primary-green);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.date {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color
