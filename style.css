@@ -1,94 +1,87 @@
-/* --- 1. THE BASICS --- */
+/* --- 1. CORE BRANDING --- */
 :root {
-    --primary-green: #2e7d32; /* Forest Green */
-    --light-grey: #f8f9fa;
-    --text-dark: #333333;
+    --primary-green: #2e7d32;
+    --accent-green: #f1f8e9;
+    --page-bg: #f4f7f4; /* Soft Sage Background */
+    --text-dark: #263238;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-dark);
-    background-color: #ffffff; /* CLEAN WHITE */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--page-bg) !important;
     margin: 0;
-    padding: 0;
+    color: var(--text-dark);
 }
 
-/* --- 2. HEADER & NAVIGATION --- */
+/* --- 2. THE GRADIENT NAV BAR (RESTORED) --- */
 header {
-    background-color: #ffffff;
-    border-bottom: 2px solid var(--primary-green);
-    padding: 20px;
+    background: linear-gradient(180deg, #ffffff 0%, var(--accent-green) 100%) !important;
+    padding: 30px 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 4px solid var(--primary-green);
 }
+
+header nav { margin-top: 15px; }
 
 header nav a {
     text-decoration: none;
     color: var(--text-dark);
-    margin: 0 15px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 0 5px;
+    font-weight: 600;
+    border-radius: 50px; /* Pill Shape */
+    display: inline-block;
 }
 
 header nav a.active {
-    background-color: var(--primary-green);
-    color: #ffffff;
+    background-color: var(--primary-green) !important;
+    color: white !important;
 }
 
-/* --- 3. THE CENTERED CONTAINER --- */
+/* --- 3. THE BUBBLES (NEWS POST CARDS) --- */
 main {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* --- 4. IMAGE CONTROL --- */
-.hero-banner {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* --- 5. THE POST CARDS --- */
 .post-list {
     list-style: none;
     padding: 0;
 }
 
+/* This creates the white bubble around each news post */
 .post-list li {
-    padding: 20px;
-    border-bottom: 1px solid #eee;
-    transition: background 0.3s;
-}
-
-.post-list li:hover {
-    background-color: var(--light-grey);
+    background: white !important;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .post-list a {
-    text-decoration: none;
-    color: var(--primary-green);
+    text-decoration: none !important;
+    color: var(--primary-green) !important;
+    font-size: 1.3rem;
     font-weight: bold;
-    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
 }
 
-/* --- 6. BOXES (MY TAKE) --- */
-blockquote {
-    border-left: 5px solid var(--primary-green);
-    background-color: var(--light-grey);
-    padding: 20px;
-    margin: 20px 0;
-    font-style: italic;
-    border-radius: 0 8px 8px 0;
+.category-badge {
+    display: inline-block;
+    background: var(--accent-green);
+    color: var(--primary-green);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #777;
+.date {
+    font-size: 0.85rem;
+    color: #607d8b;
 }
