@@ -45,10 +45,38 @@ nav {
     margin-top: 20px;
 }
 
-nav a {
-    color: #2e7d32;
+nav a {/* Professional Button-Style Navigation */
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
     text-decoration: none;
-    font-weight: 500;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 20px;
+    margin: 0 8px;
+    border-radius: 30px; /* Creates the pill shape */
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 1.5px solid transparent; /* Keeps layout stable */
+}
+
+/* Hover Effect: Soft Green Background + Border */
+header nav a:hover {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+    border: 1.5px solid #2e7d32;
+    transform: translateY(-1px); /* Subtle lift */
+}
+
+/* Active State: Solid Green to show "You Are Here" */
+header nav a.active {
+    background-color: #2e7d32;
+    color: white;
+    border: 1.5px solid #2e7d32;
+}
 }
 
 /* Post list on homepage - Critical Scraper Format */
@@ -256,4 +284,9 @@ header nav a:hover {
     color: #666;
     margin: 0;
     line-height: 1.4;
+}
+/* This highlights the link if you give it the class "active" in your HTML */
+header nav a.active {
+    background-color: #2e7d32;
+    color: white;
 }
