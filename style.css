@@ -1,50 +1,67 @@
+/* --- 1. THE MODERN PALETTE --- */
 :root {
     --primary-green: #2e7d32;
     --accent-green: #f1f8e9;
-    --page-bg: #f4f7f4; 
-    --text-dark: #263238;
+    --deep-charcoal: #263238;
+    --page-bg: #f4f7f4; /* Soft Sage Background */
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--page-bg) !important;
-    color: var(--text-dark);
+    color: var(--deep-charcoal);
     margin: 0;
     line-height: 1.8;
 }
 
-/* --- GRADIENT HEADER & PILLS --- */
+/* --- 2. THE GRADIENT NAV BAR (RESTORATION) --- */
 header {
-    background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); /* Restored Gradient */
+    background: linear-gradient(180deg, #ffffff 0%, var(--accent-green) 100%) !important;
     padding: 40px 20px;
     text-align: center;
     border-bottom: 4px solid var(--primary-green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+header nav { margin-top: 20px; }
 
 header nav a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--deep-charcoal);
     font-weight: 600;
     padding: 10px 25px;
     margin: 0 10px;
     border-radius: 50px; /* Pill Shape */
-    display: inline-block;
     transition: 0.3s;
+    display: inline-block;
 }
 
 header nav a.active {
-    background-color: var(--primary-green) !important; /* Restored Green Pill */
+    background-color: var(--primary-green) !important;
     color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
 }
 
-/* --- CENTERED CONTENT --- */
+/* --- 3. LAYOUT & IMAGE RESTRAINTS (FIXES OVERSIZED IMAGES) --- */
 main {
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 800px !important; /* Forces content to center */
+    margin: 40px auto !important;
     padding: 0 20px;
 }
 
-/* --- GREEN BULLET POINTS --- */
+/* This rule forces ALL news post images to stay within the column */
+article img, .hero-banner {
+    width: 100% !important;
+    max-width: 800px !important;
+    height: auto !important;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* --- 4. GREEN BULLET POINTS (RESTORATION) --- */
 ul {
     list-style: none;
     padding-left: 20px;
@@ -52,21 +69,22 @@ ul {
 
 ul li::before {
     content: "•";
-    color: var(--primary-green); /* Green Bullets */
+    color: var(--primary-green);
     font-weight: bold;
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
 }
 
-/* --- BOXES (PERSPECTIVE & CARDS) --- */
+/* --- 5. BOXES (MY PERSPECTIVE & CARDS) --- */
 blockquote {
     border-left: 8px solid var(--primary-green);
     background: white;
     padding: 30px;
-    margin: 40px 0;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin: 30px 0;
+    border-radius: 0 15px 15px 0;
+    font-style: italic;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .suggestion-grid {
