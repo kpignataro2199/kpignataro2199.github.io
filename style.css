@@ -1,34 +1,35 @@
-/* --- 1. CORE BRANDING --- */
 :root {
     --primary-green: #2e7d32;
     --accent-green: #f1f8e9;
-    --deep-charcoal: #263238;
-    --page-bg: #f4f7f4; /* Soft Sage */
+    --page-bg: #f4f7f4; 
+    --text-dark: #263238;
 }
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--page-bg) !important;
-    color: var(--deep-charcoal);
+    color: var(--text-dark);
     margin: 0;
     line-height: 1.8;
 }
 
-/* --- 2. PILL NAVIGATION --- */
+/* GRADIENT HEADER & NAV PILLS */
 header {
-    background: #ffffff;
-    padding: 30px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 3px solid var(--primary-green);
+    border-bottom: 4px solid var(--primary-green);
 }
+
+header nav { margin-top: 20px; }
 
 header nav a {
     text-decoration: none;
-    color: var(--deep-charcoal);
+    color: var(--text-dark);
     font-weight: 600;
-    padding: 8px 22px;
-    margin: 0 5px;
-    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 50px;
     display: inline-block;
     transition: 0.3s;
 }
@@ -38,53 +39,35 @@ header nav a.active {
     color: #ffffff !important;
 }
 
-/* --- 3. THE CENTERING FIX (STOPS TEXT STRETCHING) --- */
+/* CENTERED CONTAINER FIX (STOPS STRETCHING) */
 main {
-    max-width: 800px !important;
-    margin: 40px auto !important;
+    max-width: 800px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
-.hero-banner {
-    width: 100% !important;
-    max-width: 800px;
-    height: auto;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-/* --- 4. THE POST CARDS (SEPARATE BOXES) --- */
-.post-list {
-    list-style: none;
-    padding: 0;
-}
-
-.post-list li {
-    background: #ffffff;
-    margin-bottom: 25px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-.post-list a {
-    text-decoration: none;
+/* GREEN BULLET POINTS */
+ul { list-style: none; padding-left: 20px; }
+ul li::before {
+    content: "•";
     color: var(--primary-green);
-    font-size: 1.3rem;
     font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }
 
-/* --- 5. "MY TAKE" & RECOMMENDED READING BOXES --- */
-blockquote, .my-perspective-box {
-    border-left: 6px solid var(--primary-green);
-    background: #ffffff !important;
-    padding: 25px;
-    margin: 30px 0;
-    border-radius: 0 15px 15px 0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+/* MY PERSPECTIVE GREEN BOX */
+blockquote {
+    border-left: 8px solid var(--primary-green);
+    background: white;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
+/* RECOMMENDED READING WHITE BOXES */
 .suggestion-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -93,22 +76,12 @@ blockquote, .my-perspective-box {
 }
 
 .suggestion-card {
-    background: #ffffff !important;
-    padding: 20px;
-    border-radius: 12px;
+    background: white !important;
+    padding: 25px;
+    border-radius: 15px;
     text-decoration: none !important;
     color: inherit !important;
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     display: block;
-}
-
-.category-badge {
-    display: inline-block;
-    background: var(--accent-green);
-    color: var(--primary-green);
-    font-size: 0.7rem;
-    font-weight: 800;
-    padding: 4px 10px;
-    border-radius: 6px;
-    margin-bottom: 10px;
 }
