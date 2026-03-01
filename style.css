@@ -158,3 +158,53 @@ article li::marker {
     font-size: 1.2em;        /* Makes the bullet slightly larger */
     content: "• ";           /* Optional: you can change "•" to "→" or "»" for a sharper look */
 }
+/* Modern Transparent Sticky Navigation */
+header {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    /* This creates the transparency and the "frosted glass" blur */
+    background-color: rgba(255, 255, 255, 0.9); /* 90% white */
+    backdrop-filter: blur(10px); /* This blurs the content behind the bar */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
+    border-bottom: 2px solid #2e7d32; 
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+/* 1. Sticky Bar Link Hover Effect */
+header nav a {
+    text-decoration: none;
+    color: #333; /* Original color */
+    transition: color 0.3s ease; /* Makes the color change smooth */
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #2e7d32; /* Turns green when you hover */
+}
+
+/* 2. Post List Hover Shadow Effect */
+.post-list li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: transparent; /* Keeps it clean until hover */
+    display: block;
+}
+
+.post-list li:hover {
+    background-color: #fff; /* Ensures a solid background for the shadow */
+    transform: translateY(-3px); /* Slightly lifts the post up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Ensure the links inside the list take up the whole space */
+.post-list li a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
