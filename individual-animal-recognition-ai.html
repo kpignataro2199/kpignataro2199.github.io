@@ -3,112 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Recognizing Individual Animals - Applied AI in Animal Behavior & Welfare</title>
+    <title>Individual Animal Recognition - Applied AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); border-bottom: 4px solid #2e7d32; padding: 20px; text-align: center;">
         <h1>Applied AI in Animal Behavior & Welfare</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a>
+        <nav style="margin-top: 15px;">
+            <a href="index.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">Home</a>
+            <a href="about.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">About</a>
+            <a href="library.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">Library</a>
         </nav>
     </header>
 
-    <main>
-        <article>
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <article style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px;">
             <h2>How AI Is Learning to Recognize Individual Animals — and Why That Changes Everything for Behavior and Welfare</h2>
-            <p class="date">February 15, 2026</p>
+            <p style="color: #607d8b; font-size: 0.9rem;">February 15, 2026</p>
 
-            <p>For most of the history of animal behavior research, identifying individual animals has been one of the biggest practical challenges. Researchers and caretakers have relied on physical tags, collars, microchips, or manual identification based on markings. These methods are often invasive, time-consuming, or prone to error. Today, artificial intelligence is changing that. AI-powered facial recognition systems can now identify individual animals automatically from images and video, creating new possibilities for behavior research, conservation, and welfare monitoring. This shift isn’t just about convenience. It fundamentally changes how researchers can study animals over time.</p>
+            <img src="recognition-tech.jpg" alt="AI individual animal identification" style="max-width: 100%; height: auto; border-radius: 12px; margin: 20px 0;">
 
-            <h3>The Technology: How AI Recognizes Individual Animals</h3>
-            <p>AI-based animal recognition typically uses computer vision and deep learning, particularly convolutional neural networks (CNNs), to detect unique visual features. These systems analyze patterns such as facial structure, markings, eye position, and texture to distinguish one individual from another.</p>
-            
-            <p>One of the most widely used platforms in conservation is Wildbook, an open-source AI system developed by the nonprofit Wild Me. Wildbook uses machine learning to identify individual animals like whale sharks, giraffes, and zebras based on their unique spot and stripe patterns. According to Wild Me, their system has helped identify over 700,000 individual animals across multiple species, allowing researchers to track individuals across years and geographic locations (Wild Me, 2024).</p>
+            <p>For decades, identifying individual animals in the wild or on farms has relied on invasive methods like ear-tagging, branding, or GPS collars. However, a new wave of AI-driven computer vision is changing the game by allowing researchers to recognize individuals based on their unique physical features—without ever touching the animal.</p>
 
-            <p>Similarly, Microsoft’s AI for Earth program helped develop facial recognition tools capable of identifying individual snow leopards and other species with high accuracy. These systems use thousands of labeled images to train neural networks to distinguish subtle visual differences between individuals (Microsoft AI for Earth, 2023).</p>
+            <p>Using deep learning models similar to human facial recognition, these systems can distinguish between individual cows, primates, and even marine life by analyzing coat patterns, whisker spots, or facial structures. This non-invasive approach is a massive leap forward for both conservation and animal welfare.</p>
 
-            <p>Facial recognition has also been applied successfully to primates. A system called PrimNet, developed by researchers in South Korea, achieved over 90% accuracy identifying individual chimpanzees from facial images. This allowed researchers to track individuals automatically in video recordings, reducing the need for manual identification (Deb et al., 2018).</p>
-
-            <p>These systems work similarly to human facial recognition but must handle greater variation in lighting, angle, posture, and environmental conditions.</p>
-
-            <h3>Why Individual Identification Matters for Behavior Research</h3>
-            <p>Being able to reliably identify individual animals unlocks entirely new possibilities for studying behavior. Traditionally, researchers had to manually track animals or rely on tags, which could be lost or cause stress. AI recognition allows continuous, non-invasive tracking using camera footage alone. This makes it possible to study:</p>
-            <ul>
-                <li>Social hierarchies</li>
-                <li>Individual personality differences</li>
-                <li>Long-term behavioral changes</li>
-                <li>Stress responses</li>
-                <li>Activity patterns over time</li>
+            <h3>Why Individual Recognition Matters</h3>
+            <ul style="list-style: none; padding-left: 20px;">
+                <li style="margin-bottom: 15px; position: relative;">
+                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
+                    <strong>Precision Welfare:</strong> Farmers can track exactly how much a specific cow is eating or moving, allowing for early intervention if an individual falls ill.
+                </li>
+                <li style="margin-bottom: 15px; position: relative;">
+                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
+                    <strong>Conservation Without Contact:</strong> Researchers can monitor endangered populations over years without the stress of capturing and marking them.
+                </li>
+                <li style="margin-bottom: 15px; position: relative;">
+                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
+                    <strong>Behavioral Insights:</strong> By knowing "who is who," AI can map social hierarchies and bonding patterns in groups that were previously impossible to track manually.
+                </li>
             </ul>
 
-            <p>For example, researchers studying primates can now track how individual relationships and dominance structures evolve without needing to manually label animals in thousands of hours of footage. This is especially important because behavior often varies significantly between individuals. Without identifying individuals, researchers risk missing critical patterns.</p>
-
-            <p>According to a 2023 review in Trends in Ecology & Evolution, AI-based identification allows researchers to move from population-level analysis to individual-level behavioral analysis, which is essential for understanding cognition, welfare, and social dynamics (Weinstein, 2023).</p>
-
-            <h3>Applications in Welfare Monitoring and Animal Care</h3>
-            <p>Beyond research, AI identification is becoming a powerful tool for improving animal welfare in zoos, farms, and conservation programs. One major advantage is continuous monitoring without physical intervention. Instead of handling animals to scan microchips or check identification, AI can identify individuals automatically through cameras.</p>
-
-            <p>This enables caretakers to detect:</p>
-            <ul>
-                <li>Changes in activity levels</li>
-                <li>Reduced movement or feeding</li>
-                <li>Social isolation</li>
-                <li>Signs of illness or stress</li>
-            </ul>
-
-            <p>These changes often appear first as behavioral shifts before physical symptoms become obvious. For example, researchers have developed facial recognition systems for dairy cows that can identify individual animals and track feeding behavior. Changes in feeding frequency or movement can indicate illness earlier than traditional observation methods (Hansen et al., 2020).</p>
-
-            <p>Early detection is critical because faster intervention improves outcomes and reduces suffering.</p>
-
-            <h3>Conservation Impacts: Protecting Animals Without Touching Them</h3>
-            <p>In conservation, AI identification has become especially valuable because it allows tracking endangered species without capturing or disturbing them. For example, Wildbook has been used to track endangered whale sharks globally, helping researchers understand migration patterns and population trends. This data has directly informed conservation decisions and protections.</p>
-
-            <p>Similarly, AI identification tools have helped researchers monitor endangered gorillas and snow leopards using camera trap images. Instead of manually sorting thousands of images, AI can identify individuals automatically. This reduces labor while improving accuracy and enabling larger-scale monitoring. According to Wild Me, these systems allow conservationists to track population health and survival rates in ways that were previously impossible.</p>
-
-            <h3>Limitations and Ethical Considerations</h3>
-            <p>Despite its benefits, AI identification is not perfect. Accuracy can decrease under poor lighting conditions, unusual angles, or when animals change appearance due to growth, injury, or seasonal changes.</p>
-
-            <p>There are also ethical considerations. AI should not replace human observation entirely. Behavioral interpretation still requires expertise and context. AI can identify patterns, but humans must determine what those patterns mean. There is also a risk of over-reliance on technology without validating results. For welfare monitoring, AI should be viewed as a support tool rather than a replacement for trained caretakers and behavior specialists.</p>
-
-            <h3>Why This Matters: A Fundamental Shift in How We Study Animals</h3>
-            <p>The ability to automatically identify individual animals changes the scale and precision of behavior research. Instead of studying anonymous members of a group, researchers can now track individuals across time, environments, and social interactions.</p>
-
-            <p>This allows deeper insights into:</p>
-            <ul>
-                <li>Personality and cognition</li>
-                <li>Stress and welfare</li>
-                <li>Social relationships</li>
-                <li>Long-term behavioral change</li>
-            </ul>
-
-            <p>From a welfare perspective, this technology allows earlier detection of problems and more individualized care. From a research perspective, it allows more accurate and reproducible studies. From a conservation perspective, it allows monitoring endangered species without harming or disturbing them.</p>
-
-            <blockquote>
-                <strong>My Perspective:</strong> What makes this technology especially important is that behavior and welfare are inherently individual. Two animals of the same species can respond completely differently to the same environment. Without identifying individuals, those differences can easily be missed. AI identification allows behavior to be studied at the level it actually occurs — the individual animal. Rather than replacing human observation, this technology expands what researchers and caretakers are capable of seeing. It makes long-term, large-scale behavioral tracking practical in ways that were previously impossible. As these tools continue improving, they will likely become standard in both research and animal care settings. AI is not just helping us see animals more efficiently. It is helping us see them more accurately.
+            <blockquote style="background: #f1f8e9; border-left: 5px solid #2e7d32; padding: 25px; border-radius: 0 10px 10px 0; margin: 30px 0;">
+                <strong style="color: #2e7d32; display: block; margin-bottom: 10px;">My Perspective: The End of Invasive Tagging</strong>
+                <p style="font-style: italic; color: #2e7d32; margin: 0;">
+                    Moving away from physical tags is one of the most significant wins for animal welfare in the tech age. Tags can get caught, cause infections, or alter an animal's natural behavior. By using AI to "see" individuals for who they are, we are finally observing animals in their most natural state while still gathering the data needed to protect them.
+                </p>
             </blockquote>
         </article>
-        <section class="suggested-reading">
-    <h3>Related Research</h3>
-    <div class="suggestion-grid">
-        <a href="oregon-state-species-id.html" class="suggestion-card">
-            <h4>Species ID in the Field</h4>
-            <p>While this post covers individual ID, learn how Oregon State is perfecting broad species identification...</p>
-        </a>
-        <a href="animal-emotion-vocalizations.html" class="suggestion-card">
-            <h4>Decoding Emotions</h4>
-            <p>Once an animal is identified, how do we know how they feel? AI is now decoding vocalizations...</p>
-        </a>
-        <a href="library.html" class="suggestion-card">
-            <h4>Research Library</h4>
-            <p>Access the full bibliography and tools like Wildbook and PrimNet mentioned in this article.</p>
-        </a>
-    </div>
-</section>
+
+        <h3 style="margin-left: 10px;">Recommended Reading</h3>
+        <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+            <a href="collective-animal-behavior-ai.html" style="background: white; padding: 25px; border-radius: 15px; text-decoration: none; border: 1px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.05); display: block;">
+                <h4 style="color: #2e7d32; margin: 0 0 10px 0;">Collective Behavior</h4>
+                <p style="color: #666; font-size: 0.85rem; margin: 0;">Once we identify individuals, we can track how they move in a group.</p>
+            </a>
+            <a href="poser-automated-behavior-scoring.html" style="background: white; padding: 25px; border-radius: 15px; text-decoration: none; border: 1px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.05); display: block;">
+                <h4 style="color: #2e7d32; margin: 0 0 10px 0;">PoseR Tech</h4>
+                <p style="color: #666; font-size: 0.85rem; margin: 0;">How AI maps body positions to score behavior automatically.</p>
+            </a>
+        </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center; padding: 40px; color: #777;">
         <p>&copy; 2026 kpignataro2199</p>
     </footer>
 </body>
