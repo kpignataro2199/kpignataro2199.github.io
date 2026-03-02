@@ -3,53 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoseR: Automating Behavioral Descriptions - Applied AI in Animal Behavior & Welfare</title>
+    <title>PoseR AI Tool - Applied AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); border-bottom: 4px solid #2e7d32; padding: 20px; text-align: center;">
         <h1>Applied AI in Animal Behavior & Welfare</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a>
+        <nav style="margin-top: 15px;">
+            <a href="index.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">Home</a>
+            <a href="about.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">About</a>
+            <a href="library.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">Library</a>
         </nav>
     </header>
 
-    <main>
-        <article>
-            <h2>PoseR: Automating Behavioral Descriptions</h2>
-            <p class="date">February 9, 2026</p>
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <article style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px;">
+            <h2>Researchers Develop PoseR to Automate Animal Behavior Scoring</h2>
+            <p style="color: #607d8b; font-size: 0.9rem;">January 21, 2026</p>
+
+            <img src="poser-tech-display.jpg" alt="PoseR AI behavior mapping" style="max-width: 100%; height: auto; border-radius: 12px; margin: 20px 0;">
 
             <p>Researchers from the University of St. Andrews have developed a new AI tool called PoseR, designed to automate the process of turning hours of animal video footage into clear, human-readable behavioral descriptions. This tool uses graph neural networks — a type of AI that can interpret complex movement patterns — to categorize behaviors such as locomotion, social interaction, and other actions faster and more consistently than traditional manual scoring. The work was published in Open Biology on January 21, 2026.</p>
-            
-            <p>PoseR addresses a major bottleneck in behavioral neuroscience and ethology: the time-intensive task of manually watching video recordings and annotating behavior. Traditional methods often take weeks or months for a single study, slowing research progress and introducing observer biases. The new AI pipeline interprets video data into behavioral categories with high consistency, helping scientists study how brains produce movement and how diseases or treatments affect behavior.</p>
-            
-            <p>Understanding animal behavior at fine scales is central to both welfare and scientific inquiry, but manual scoring limits the size and reproducibility of studies. Tools like PoseR can dramatically accelerate research by rapidly transforming raw video into structured behavioral data. This enables larger datasets, faster analysis, and more replicable results, which are key for advancing fields like neuroscience, ethology, and animal welfare assessment. Automating behavior classification also helps standardize methods across labs, reducing subjectivity in research.</p>
 
-            <blockquote>
-                <strong>My Take:</strong> What stands out to me about PoseR is how it shifts behavioral research from being limited by human time and subjectivity to being scalable and more standardized. Behavior is incredibly nuanced, and while AI won’t replace expert interpretation, tools like this could reduce inconsistencies between researchers and make large-scale studies more feasible. If used thoughtfully, automated behavior classification could strengthen welfare research by providing more objective data — especially when subtle changes in movement patterns are early indicators of stress, illness, or environmental discomfort.
+            <p>PoseR addresses a major bottleneck in behavioral neuroscience and ethology: the time-intensive task of manually watching video recordings and annotating behavior. Traditional methods often take weeks or months for a single study, slowing research progress and introducing observer biases. The new AI pipeline interprets video data into behavioral categories with high consistency, helping scientists study how brains produce movement and how diseases or treatments affect behavior.</p>
+
+            <ul style="list-style: none; padding-left: 20px;">
+                <li style="margin-bottom: 15px; position: relative;">
+                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
+                    Understanding animal behavior at fine scales is central to both welfare and scientific inquiry, but manual scoring limits the size and reproducibility of studies.
+                </li>
+                <li style="margin-bottom: 15px; position: relative;">
+                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
+                    Tools like PoseR can dramatically accelerate research by rapidly transforming raw video into structured behavioral data.
+                </li>
+                <li style="margin-bottom: 15px; position: relative;">
+                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
+                    This enables larger datasets, faster analysis, and more replicable results, which are key for advancing fields like neuroscience, ethology, and animal welfare assessment.
+                </li>
+            </ul>
+
+            <p>Automating behavior classification also helps standardize methods across labs, reducing subjectivity in research.</p>
+
+            <blockquote style="background: #f1f8e9; border-left: 5px solid #2e7d32; padding: 25px; border-radius: 0 10px 10px 0; margin: 30px 0;">
+                <strong style="color: #2e7d32; display: block; margin-bottom: 10px;">My Take: Objective Scaling</strong>
+                <p style="font-style: italic; color: #2e7d32; margin: 0;">
+                    What stands out to me about PoseR is how it shifts behavioral research from being limited by human time and subjectivity to being scalable and more standardized. Behavior is incredibly nuanced, and while AI won’t replace expert interpretation, tools like this could reduce inconsistencies between researchers and make large-scale studies more feasible. If used thoughtfully, automated behavior classification could strengthen welfare research by providing more objective data — especially when subtle changes in movement patterns are early indicators of stress, illness, or environmental discomfort.
+                </p>
             </blockquote>
         </article>
-        <section class="suggested-reading">
-    <h3>Related Research</h3>
-    <div class="suggestion-grid">
-        <a href="mammalps-wildlife-behavior.html" class="suggestion-card">
-            <h4>The MammAlps Dataset</h4>
-            <p>PoseR scores behavior, but MammAlps provides the massive datasets needed to train these models...</p>
-        </a>
-        <a href="individual-animal-recognition-ai.html" class="suggestion-card">
-            <h4>Individual ID Technology</h4>
-            <p>Pairing automated scoring with individual recognition allows for long-term behavioral tracking...</p>
-        </a>
-        <a href="library.html" class="suggestion-card">
-            <h4>Research Library</h4>
-            <p>Explore the graph neural network documentation and other behavioral analysis tools.</p>
-        </a>
-    </div>
-</section>
+
+        <h3 style="margin-left: 10px;">Recommended Reading</h3>
+        <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+            <a href="individual-animal-recognition-ai.html" style="background: white; padding: 25px; border-radius: 15px; text-decoration: none; border: 1px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.05); display: block;">
+                <h4 style="color: #2e7d32; margin: 0 0 10px 0;">Individual Recognition</h4>
+                <p style="color: #666; font-size: 0.85rem; margin: 0;">The foundation: Identifying the animal before scoring its behavior.</p>
+            </a>
+            <a href="collective-animal-behavior-ai.html" style="background: white; padding: 25px; border-radius: 15px; text-decoration: none; border: 1px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.05); display: block;">
+                <h4 style="color: #2e7d32; margin: 0 0 10px 0;">Collective Behavior</h4>
+                <p style="color: #666; font-size: 0.85rem; margin: 0;">How these tools scale up to monitor whole groups at once.</p>
+            </a>
+        </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center; padding: 40px; color: #777;">
         <p>&copy; 2026 kpignataro2199</p>
     </footer>
 </body>
