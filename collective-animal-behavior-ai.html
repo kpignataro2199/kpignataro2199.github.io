@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); border-bottom: 4px solid #2e7d32;">
+    <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); border-bottom: 4px solid #2e7d32; padding: 20px; text-align: center;">
         <h1>Applied AI in Animal Behavior & Welfare</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="library.html">Library</a>
+        <nav style="margin-top: 15px;">
+            <a href="index.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold; padding: 8px 16px; border-radius: 20px;">Home</a>
+            <a href="about.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold; padding: 8px 16px; border-radius: 20px;">About</a>
+            <a href="library.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold; padding: 8px 16px; border-radius: 20px;">Library</a>
         </nav>
     </header>
 
-    <main>
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
         <article style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 30px;">
             <h2>Beyond Individual Animals: How AI and Next-Generation Sensors Are Reshaping Collective Behaviour Research</h2>
             <p style="color: #607d8b; font-size: 0.9rem;">March 1, 2026</p>
@@ -24,12 +24,10 @@
             <p>In recent years, AI’s role in animal studies has expanded from identifying species and individuals to addressing more complex questions: how groups of animals behave as coordinated units. A growing body of research shows that machine learning and advanced sensing tools are now being applied not just to monitor individual animals, but to analyze collective behaviour — the ways in which animals move, communicate, and coordinate as a group. These advances promise to deepen our scientific understanding of social dynamics and ecosystem responses, and could have significant implications for conservation, behavior science, and even robotics.</p>
 
             <h3>What Is Collective Behaviour — and Why AI?</h3>
-            <p>Collective behaviour refers to how groups of animals interact and coordinate their actions at the group level. Examples include flocking in birds, schooling in fish, herding in ungulates, and swarming in insects. These patterns emerge from repeated interactions among individuals, and they are often sensitive to environmental conditions or internal group states. Studying collective behaviour has historically required painstaking manual observation and coding, especially for large groups or prolonged activity.</p>
-            
-            <p>Today, AI — especially computer vision, sensing networks, and machine learning — enables researchers to track and analyze every individual in a group over time while also deriving metrics that capture group-level dynamics. This is vital because collective behaviours often contain signals of stress, resource availability, or environmental change that simply aren’t visible when focusing solely on individuals.</p>
+            <p>Collective behaviour refers to how groups of animals interact and coordinate their actions at the group level. Examples include flocking in birds, schooling in fish, herding in ungulates, and swarming in insects. Today, AI — especially computer vision, sensing networks, and machine learning — enables researchers to track and analyze every individual in a group over time while also deriving metrics that capture group-level dynamics. This is vital because collective behaviours often contain signals of stress, resource availability, or environmental change that simply aren’t visible when focusing solely on individuals.</p>
 
             <h3>AI + Sensors: The Technological Backbone</h3>
-            <p>Advances in both hardware and software are making these new approaches possible. High-resolution cameras, lidar, and next-generation environmental sensors can capture rich data across space and time. AI models then process this data to extract behavioral features such as movement trajectories, spatial organization, and synchronization patterns. For example:</p>
+            <p>High-resolution cameras, lidar, and next-generation environmental sensors can capture rich data across space and time. AI models then process this data to extract behavioral features such as movement trajectories, spatial organization, and synchronization patterns. For example:</p>
             
             <ul style="list-style: none; padding-left: 20px;">
                 <li style="margin-bottom: 15px; position: relative;">
@@ -38,30 +36,11 @@
                 </li>
                 <li style="margin-bottom: 15px; position: relative;">
                     <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
-                    Multimodal architectures are emerging that integrate visual, audio, and contextual data to better resolve behaviour in complex environments (e.g., farms or mixed habitats), improving beyond simple video analysis.
+                    Multimodal architectures are emerging that integrate visual, audio, and contextual data to better resolve behaviour in complex environments, improving beyond simple video analysis.
                 </li>
             </ul>
-
-            <p>Together, these tools allow researchers to build computational models of behaviour that describe both what individuals are doing and how groups self-organize.</p>
 
             <h3>Why This Matters for Welfare and Ecology</h3>
-            <p>While individual behaviour is essential to welfare assessment — for example, tracking a cow’s feeding patterns — collective behaviour can offer insights that individual metrics miss. For instance:</p>
+            <p>While individual behaviour is essential to welfare assessment, collective behaviour can offer insights that individual metrics miss. For instance:</p>
             <ul style="list-style: none; padding-left: 20px;">
                 <li style="margin-bottom: 10px; position: relative;">
-                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
-                    <strong>Early detection of stress or disease:</strong> Changes in group cohesion or movement patterns can signal discomfort or outbreaks before individual animals show obvious signs.
-                </li>
-                <li style="margin-bottom: 10px; position: relative;">
-                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
-                    <strong>Habitat disturbance monitoring:</strong> Variations in collective movement patterns may reflect disruptions due to human activity or environmental stressors, serving as early indicators of ecosystem change.
-                </li>
-                <li style="margin-bottom: 10px; position: relative;">
-                    <span style="color: #2e7d32; position: absolute; left: -20px; font-weight: bold;">•</span>
-                    <strong>Behavioral flexibility and adaptation:</strong> Some species shift collective strategies (e.g., tighter grouping in response to predation or environmental stress), and AI allows quantification of these shifts in ways not previously possible.
-                </li>
-            </ul>
-
-            <h3>Challenges and Ethical Considerations</h3>
-            <p>Despite its promise, this field also faces significant challenges. Processing collective behaviour data requires enormous computational capacity and sophisticated models that can handle high-dimensional inputs. Additionally, AI systems trained on one species or environment often don’t generalize well to others without substantial retraining.</p>
-            
-            <p>From an ethical perspective, researchers also need to consider how these technologies are deployed. Automated surveillance of large animal groups can inadvertently collect sensitive data (e.g., on endangered populations or domesticated animals), and frameworks for data stewardship and responsible usage are still evolving.
