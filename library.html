@@ -3,50 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Library - Applied AI in Animal Behavior & Welfare</title>
+    <title>Research Library - Applied AI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header style="position: sticky; top: 0; z-index: 1000; background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%); border-bottom: 4px solid #2e7d32; padding: 20px; text-align: center;">
         <h1>Applied AI in Animal Behavior & Welfare</h1>
-        <nav>
-            <nav>
-    <a href="index.html">Home</a> | 
-    <a href="about.html">About</a> | 
-    <a href="library.html" class="active">Library</a>
-</nav>
+        <nav style="margin-top: 15px;">
+            <a href="index.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">Home</a>
+            <a href="about.html" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">About</a>
+            <a href="library.html" class="active" style="text-decoration: none; color: #333; margin: 0 15px; font-weight: bold;">Library</a>
         </nav>
     </header>
 
-    <main>
-        <h2>Research Library & References</h2>
-        <p>A comprehensive collection of the tools, datasets, and primary sources discussed in our newsletter posts.</p>
+    <main style="max-width: 1000px; margin: 40px auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="color: #2e7d32;">Project Archive</h2>
+            <p style="color: #666;">A collection of research, news, and insights into the intersection of AI and ethology.</p>
+        </div>
 
-        <h3>AI Tools & Platforms</h3>
-        <ul>
-            <li><strong>Wildbook (Wild Me):</strong> <a href="https://www.wildme.org/" target="_blank">Wildbook Platform Overview</a> — An open-source AI system for identifying individual animals like whale sharks and giraffes using unique patterns[cite: 10, 11, 82].</li>
-            <li><strong>PoseR:</strong> <a href="https://royalsocietypublishing.org/journal/rsob" target="_blank">PoseR Tool via Open Biology</a> — A graph neural network tool developed by the University of St. Andrews to automate behavioral descriptions from video[cite: 83, 85].</li>
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
             
-            <li><strong>MammAlps:</strong> <a href="https://phys.org/news/2025-06-ai-wildlife-behavior-swiss-alps.html" target="_blank">MammAlps Wildlife Dataset</a> — A multi-view, multimodal video dataset for training AI to recognize nuanced wildlife behaviors in the Swiss Alps[cite: 110, 118].</li>
-        </ul>
+            <a href="collective-animal-behavior-ai.html" style="text-decoration: none; color: inherit;">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; border-top: 5px solid #2e7d32;">
+                    <span style="background: #e8f5e9; color: #2e7d32; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Wildlife</span>
+                    <h3 style="margin: 15px 0 10px 0; color: #333;">Beyond Individual Animals</h3>
+                    <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">How AI and sensors are reshaping collective behavior research.</p>
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #999; font-weight: bold;">March 1, 2026</div>
+                </div>
+            </a>
 
-        <h3>Research Articles & News Sources</h3>
-        <ul>
-            <li><strong>Animal Emotions:</strong> <a href="https://www.sciencedaily.com/releases/2025/02/250221125552.htm" target="_blank">AI Decodes Animal Emotions (University of Copenhagen)</a> — Machine learning models distinguishing positive and negative emotional states in ungulates[cite: 97, 108].</li>
-            <li><strong>Species Identification:</strong> <a href="https://news.oregonstate.edu/news/wildlife-researchers-train-ai-better-identify-animal-species-trail-camera-photos" target="_blank">Oregon State University Camera Trap Study</a> — Research on training models with narrower objectives to boost species ID accuracy to 90%[cite: 120, 128].</li>
-            <li><strong>Animal Health Market:</strong> <a href="https://www.globenewswire.com/news-release/2026/01/08/3215090/0/en/2-88-Bn-Artificial-Intelligence-in-Animal-Health-Global-Markets-2019-2024-2024-2029F-2034F.html" target="_blank">Global AI in Animal Health Forecast</a> — Market analysis projecting growth to $2.88 billion by 2029[cite: 131, 138].</li>
-            <li><strong>Computer Vision for Ecology:</strong> <a href="https://www.cell.com/trends/ecology-evolution/home" target="_blank">Weinstein (2023) Review</a> — A look at how individual-level analysis is essential for understanding cognition and social dynamics[cite: 29, 81].</li>
-            <li><strong>Dairy Cow Monitoring:</strong> <a href="https://www.sciencedirect.com/journal/computers-and-electronics-in-agriculture" target="_blank">Hansen et al. (2020)</a> — Research on automatic recognition of dairy cows using facial features[cite: 39, 79].</li>
-            
-        </ul>
+            <a href="individual-animal-recognition-ai.html" style="text-decoration: none; color: inherit;">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; border-top: 5px solid #2e7d32;">
+                    <span style="background: #e8f5e9; color: #2e7d32; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Welfare</span>
+                    <h3 style="margin: 15px 0 10px 0; color: #333;">Individual Recognition</h3>
+                    <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">Distinguishing individuals based on unique physical features without invasive tags.</p>
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #999; font-weight: bold;">February 15, 2026</div>
+                </div>
+            </a>
 
-        <section class="recommended-box">
-            <h4>Missing something?</h4>
-            <p>If you are looking for a specific study mentioned in a post that isn't listed here, feel free to check the "Sources" section at the bottom of each individual article.</p>
+            <a href="animal-emotions-ai.html" style="text-decoration: none; color: inherit;">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; border-top: 5px solid #2e7d32;">
+                    <span style="background: #fff3e0; color: #ef6c00; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Sentience</span>
+                    <h3 style="margin: 15px 0 10px 0; color: #333;">Decoding Emotions</h3>
+                    <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">Using deep learning to identify "honest signals" of emotion in diverse species.</p>
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #999; font-weight: bold;">February 10, 2026</div>
+                </div>
+            </a>
+
+            <a href="poser-automated-behavior-scoring.html" style="text-decoration: none; color: inherit;">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; border-top: 5px solid #2e7d32;">
+                    <span style="background: #e3f2fd; color: #1565c0; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Tech Tool</span>
+                    <h3 style="margin: 15px 0 10px 0; color: #333;">PoseR Scoring Tool</h3>
+                    <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">Automating the process of turning video into behavioral descriptions.</p>
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #999; font-weight: bold;">January 21, 2026</div>
+                </div>
+            </a>
+
+            <a href="mammalps-wildlife-behavior.html" style="text-decoration: none; color: inherit;">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; border-top: 5px solid #2e7d32;">
+                    <span style="background: #e8f5e9; color: #2e7d32; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Datasets</span>
+                    <h3 style="margin: 15px 0 10px 0; color: #333;">The MammAlps Project</h3>
+                    <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">Multi-view datasets helping AI decode behavior in the Swiss Alps.</p>
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #999; font-weight: bold;">January 25, 2026</div>
+                </div>
+            </a>
+
+            <a href="animal-health-market-growth.html" style="text-decoration: none; color: inherit;">
+                <div style="background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 100%; border-top: 5px solid #2e7d32;">
+                    <span style="background: #f3e5f5; color: #7b1fa2; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Market</span>
+                    <h3 style="margin: 15px 0 10px 0; color: #333;">$3 Billion Health Market</h3>
+                    <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">Financial forecasts for AI in commercial and clinical animal care.</p>
+                    <div style="margin-top: 20px; font-size: 0.8rem; color: #999; font-weight: bold;">January 25, 2026</div>
+                </div>
+            </a>
+
         </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center; padding: 60px 40px; color: #777;">
         <p>&copy; 2026 kpignataro2199</p>
     </footer>
 </body>
